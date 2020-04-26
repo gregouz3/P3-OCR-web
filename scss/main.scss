@@ -1,11 +1,20 @@
 $color-primary: #FCCA46;
+$color-menu1: #3C1218;
+$color-menu2: #C77412;
+$color-menu3: #0887FB;
+$color-menu4: #72BF56;
+
 $bg-primary: #569C87;
+$bg-menu1: #FDE0DC;
+$bg-menu2: #FFF5FE;
+$bg-menu3: #F9F9F9;
+$bg-menu4: #FDFFFD;
 
 * {margin: 0; padding: 0;}
-body { font-family: 'Roboto', sans-serif;}
+body { font-family: 'Roboto', sans-serif; overflow-x: hidden;}
 a { text-decoration: none;}
 ul { list-style-type: none;}
-
+img { height: auto; max-width: 100%;}
 .header { 
   background-color: $bg-primary;
   display: flex;
@@ -16,8 +25,8 @@ ul { list-style-type: none;}
   &__title--btn { 
     color: $color-primary;
     font-weight: 600;
-    font-size:3.5rem;
-    letter-spacing: -5px;
+    font-size:3rem;
+    letter-spacing: -4px;
     &:hover {
       opacity: 0.5;
     }
@@ -31,23 +40,73 @@ ul { list-style-type: none;}
     flex-wrap: wrap;
     padding:2rem 3.2rem 2rem 3.2rem;
     &__menu {
-      height: 70vh;
+      height: 65vh;
       min-width: 45%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       margin: 2.5%;
       }
       &__menu--btn {
-        height: 70vh;
-        width: 100%;
-        background-color: $color-primary;
+        height: 65vh;
+        min-width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        line-height: 3rem;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        box-shadow: 0 0 10px 0 #E2E2E1;
+      }
+      &__menu--title {
+        font-weight: normal;
+        font-size: 1.5rem;
+        height: auto;
+        margin-bottom: 2rem;
+      }
+      &__menu--p {
+        font-size: 2.5rem;
+        font-weight: 400;
+        height: auto;
+      }
+      &__menu--menu1 {
+        background-color: $bg-menu1;
+        .nav-menus__menu--p {
+          text-transform: uppercase;
+          color: $color-menu1;
+        }
+        .nav-menus__menu--title {
+          font-weight: 700;
+          font-size: 1.1rem;
+          color: $color-menu1;
+        }
+      }
+      &__menu--menu2 {
+        background-color: $bg-menu2;
+        .nav-menus__menu--p {
+          color: $color-menu2;
+        }
+        .nav-menus__menu--title {
+          font-weight: 700;
+          color: $color-menu2;
+        }
+      }
+      &__menu--menu3 {
+        background-color: $bg-menu3;
+        .nav-menus__menu--p {
+          color: $color-menu3;
+        }
+        .nav-menus__menu--title {
+          font-weight: 700;
+          color: $color-menu3;
+        }
+      }
+      &__menu--menu4 {
+        background-color: $bg-menu4;
+        .nav-menus__menu--p {
+          color: $color-menu4;
+        }
+        .nav-menus__menu--title {
+          font-weight: 700;
+          color: $color-menu4;
+        }
       }
     }
   }
@@ -55,8 +114,7 @@ ul { list-style-type: none;}
 .bton {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 3.2rem;
+  margin-bottom: 100px;
   &__p {
     color: $color-primary;
     background-color: $bg-primary;
@@ -69,12 +127,53 @@ ul { list-style-type: none;}
 .footer {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   height: 10vh;
   background-color: $bg-primary;
   align-items: center;
+  position: fixed;
+  bottom: 0;
   &__content--btn {
     color: $color-primary;
     margin: 1rem;
     font-size: 1.7rem;
   }
 }
+
+
+/*index1*/
+.title {
+  text-align: center;
+  margin: 2rem auto 1rem auto;
+}
+.zone-menu {
+  width: 80%;
+  margin: 1rem 10% 6rem 10%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bg-menu1;
+  color: $color-menu1;
+  box-shadow: 0 0 10px 0 #E2E2E1;
+  &__header {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &--img {
+      margin: 0 auto 0 auto;
+      width: 130px;
+      height: 100px;
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    &--img {
+      margin-right: -15px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
