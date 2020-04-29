@@ -16,11 +16,6 @@ ul {
   list-style-type: none;
 }
 
-img {
-  height: auto;
-  max-width: 100%;
-}
-
 .header {
   background-color: #569C87;
   display: flex;
@@ -37,6 +32,7 @@ img {
 }
 .header__title--btn:hover {
   opacity: 0.5;
+  transition: all 0.8s;
 }
 
 .nav {
@@ -45,7 +41,8 @@ img {
 .nav-menus {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 3.2rem 2rem 3.2rem;
+  justify-content: center;
+  padding: 2rem 5rem 2rem 5rem;
 }
 .nav-menus__menu {
   height: 65vh;
@@ -67,60 +64,82 @@ img {
   font-weight: normal;
   font-size: 1.5rem;
   height: auto;
-  margin-bottom: 2rem;
+  white-space: nowrap;
 }
 .nav-menus__menu--p {
   font-size: 2.5rem;
-  font-weight: 400;
   height: auto;
 }
 .nav-menus__menu--menu1 {
   background-color: #FDE0DC;
+  display: flex;
+  justify-content: center;
 }
 .nav-menus__menu--menu1 .nav-menus__menu--p {
   text-transform: uppercase;
   color: #3C1218;
+  font-family: "Tillana";
+  font-weight: 600;
 }
 .nav-menus__menu--menu1 .nav-menus__menu--title {
-  font-weight: 700;
-  font-size: 1.1rem;
   color: #3C1218;
+  font-family: "Devonshire";
+  font-size: 1.9rem;
+  margin: -7px 0 0 1.5rem;
 }
 .nav-menus__menu--menu2 {
   background-color: #FFF5FE;
 }
 .nav-menus__menu--menu2 .nav-menus__menu--p {
   color: #C77412;
+  font-family: "Libre Baskerville";
+  font-weight: 600;
 }
 .nav-menus__menu--menu2 .nav-menus__menu--title {
-  font-weight: 700;
+  font-size: 1.7rem;
   color: #C77412;
+  background: linear-gradient(to right, #C77412 0%, #3e2290 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Croissant One";
 }
 .nav-menus__menu--menu3 {
-  background-color: #F9F9F9;
+  background-color: #EDEFEF;
 }
 .nav-menus__menu--menu3 .nav-menus__menu--p {
   color: #0887FB;
+  font-weight: 600;
+  font-family: "Bad Script";
 }
 .nav-menus__menu--menu3 .nav-menus__menu--title {
-  font-weight: 700;
+  font-size: 2.9rem;
   color: #0887FB;
+  font-family: "Great Vibes";
+  background: linear-gradient(to right, #0431df 0%, #0887FB 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nav-menus__menu--menu4 {
   background-color: #FDFFFD;
 }
 .nav-menus__menu--menu4 .nav-menus__menu--p {
   color: #72BF56;
+  font-family: "Bad Script";
+  font-weight: 600;
 }
 .nav-menus__menu--menu4 .nav-menus__menu--title {
-  font-weight: 700;
   color: #72BF56;
+  font-size: 2.4rem;
+  font-family: "Kaushan Script";
+  background: linear-gradient(to right, #3D923A 0%, #BEFF7F 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .bton {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 9.2rem;
 }
 .bton__p {
   color: #FCCA46;
@@ -134,11 +153,15 @@ img {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   background-color: #569C87;
   align-items: center;
   position: fixed;
   bottom: 0;
+  right: 0;
+}
+.footer__content {
+  white-space: nowrap;
 }
 .footer__content--btn {
   color: #FCCA46;
@@ -149,38 +172,298 @@ img {
 /*index1*/
 .title {
   text-align: center;
-  margin: 2rem auto 1rem auto;
+  font-size: 2rem;
+  margin: 3rem auto 1rem auto;
 }
 
-.zone-menu {
+.zone-menus {
   width: 80%;
-  margin: 1rem 10% 6rem 10%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #FDE0DC;
-  color: #3C1218;
+  margin: 0 10% 20vh 10%;
   box-shadow: 0 0 10px 0 #E2E2E1;
 }
-.zone-menu__header {
-  height: 25vh;
+.zone-menus__menu {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
-.zone-menu__header--img {
-  margin: 0 auto 0 auto;
-  width: 130px;
-  height: 100px;
+.zone-menus__menu--menu1 {
+  background-color: #FDE0DC;
+  color: #3C1218;
 }
-.zone-menu__footer {
+.zone-menus__menu--menu1 .zone-menus__menu__header {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__header--img {
+  margin: 2rem auto -10px auto;
+  width: 130px;
+  height: 90px;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__header--title {
+  font-family: "Devonshire";
+  font-size: 3rem;
+  font-weight: 500;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 2rem 0 4rem 0;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__footer--img {
+  width: 90px;
+  height: 60px;
+  margin-right: -10px;
+  margin-bottom: 0;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__footer--title {
+  font-size: 2.5rem;
+  font-family: "Devonshire";
+  font-weight: 500;
+  margin-bottom: -2px;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__main {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto 1rem auto;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__main__in_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4rem 0 1.5rem 0;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__main__in_title--img {
+  width: 35%;
+  height: 20px;
+  margin: auto;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__main__in_title--title {
+  text-align: center;
+  width: 30%;
+  white-space: nowrap;
+  font-family: "Kalam";
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__main__content {
+  line-height: 2.5;
+  font-family: "Kalam";
+}
+.zone-menus__menu--menu1 .zone-menus__menu__main__content__txts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__main__content__txts--prix {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.zone-menus__menu--menu1 .zone-menus__menu__main__content__txts--txt {
+  font-size: 1.5rem;
+}
+.zone-menus__menu--menu2 {
+  background-color: #FFF5FE;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__header--title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 5rem 0 1rem 0;
+  background: linear-gradient(to right, #C77412 0%, #6E4CCC 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "Croissant One";
+  font-weight: normal;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main {
+  font-family: "Libre Baskereville";
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__in_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4rem 0 1.5rem 0;
   align-items: center;
 }
-.zone-menu__footer--img {
-  margin-right: -15px;
-  margin-bottom: 5px;
+.zone-menus__menu--menu2 .zone-menus__menu__main__in_title--img {
+  width: 30%;
+  height: 20px;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__in_title--title {
+  text-align: center;
+  width: 40%;
+  white-space: nowrap;
+  font-size: 1.7rem;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__in_title--a {
+  color: #C77412;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__in_title--b {
+  color: #A56799;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__in_title--c {
+  color: #6E4CCC;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__content {
+  line-height: 2.5;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__content__txts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 600;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__content__txts--prix {
+  width: 10%;
+  text-align: right;
+  font-size: 1.5rem;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__content__txts--txt {
+  width: 60%;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__content--a {
+  color: #C77412;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__content--b {
+  color: #A56799;
+}
+.zone-menus__menu--menu2 .zone-menus__menu__main__content--c {
+  color: #6E4CCC;
+}
+.zone-menus__menu--menu3 {
+  background-color: #EDEFEF;
+}
+.zone-menus__menu--menu3 .zone-menus__menu__header--title {
+  text-align: center;
+  background: linear-gradient(to right, #0431df 10%, #0887FB 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  margin: 5rem 0 1rem 0;
+  font-family: "Great Vibes";
+  font-weight: 500;
+}
+.zone-menus__menu--menu3 .zone-menus__menu__main {
+  font-family: "Tillana";
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.zone-menus__menu--menu3 .zone-menus__menu__main__in_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0 1.5rem 0;
+}
+.zone-menus__menu--menu3 .zone-menus__menu__main__in_title--img {
+  width: 30%;
+  height: 20px;
+}
+.zone-menus__menu--menu3 .zone-menus__menu__main__in_title--title {
+  text-align: center;
+  width: 40%;
+  white-space: nowrap;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.zone-menus__menu--menu3 .zone-menus__menu__main__content {
+  line-height: 2.5;
+}
+.zone-menus__menu--menu3 .zone-menus__menu__main__content__txts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #000000;
+}
+.zone-menus__menu--menu3 .zone-menus__menu__main__content__txts--prix {
+  width: 10%;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.zone-menus__menu--menu3 .zone-menus__menu__main__content__txts--txt {
+  width: 60%;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  font-weight: 500;
+}
+.zone-menus__menu--menu4 {
+  background-color: #FDFFFD;
+}
+.zone-menus__menu--menu4 .zone-menus__menu__header {
+  text-align: center;
+  font-family: "Kaushan Script";
+  background: linear-gradient(to right, #3D923A 0%, #BEFF7F 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  margin: 5rem 0 1rem 0;
+}
+.zone-menus__menu--menu4 .zone-menus__menu__main {
+  font-family: "Tillana";
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.zone-menus__menu--menu4 .zone-menus__menu__main__in_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0 1.5rem 0;
+}
+.zone-menus__menu--menu4 .zone-menus__menu__main__in_title--img {
+  width: 30%;
+  height: 20px;
+}
+.zone-menus__menu--menu4 .zone-menus__menu__main__in_title--title {
+  text-align: center;
+  width: 40%;
+  white-space: nowrap;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.zone-menus__menu--menu4 .zone-menus__menu__main__content {
+  line-height: 2.5;
+}
+.zone-menus__menu--menu4 .zone-menus__menu__main__content__txts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #000000;
+}
+.zone-menus__menu--menu4 .zone-menus__menu__main__content__txts--prix {
+  width: 10%;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.zone-menus__menu--menu4 .zone-menus__menu__main__content__txts--txt {
+  width: 60%;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+
+.zone-bloc {
+  width: auto;
+  height: 50vh;
+  margin: 5rem;
+  background-color: #569C87;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+}
+.zone-bloc__mentions {
+  font-size: 5rem;
+  color: #FCCA46;
 }
 
 /*# sourceMappingURL=style.css.map */
