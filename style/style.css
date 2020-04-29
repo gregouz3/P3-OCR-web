@@ -72,8 +72,6 @@ ul {
 }
 .nav-menus__menu--menu1 {
   background-color: #FDE0DC;
-  display: flex;
-  justify-content: center;
 }
 .nav-menus__menu--menu1 .nav-menus__menu--p {
   text-transform: uppercase;
@@ -464,6 +462,123 @@ ul {
 .zone-bloc__mentions {
   font-size: 5rem;
   color: #FCCA46;
+}
+
+/*Responsive page principal*/
+@media all and (max-width: 871px) {
+  .nav {
+    width: 100%;
+  }
+  .nav-menus {
+    padding: 2rem;
+  }
+
+  .nav-menus__menu--menu2 .nav-menus__menu--title {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    height: 6vh;
+  }
+  .footer__content--btn {
+    margin: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .bton {
+    margin-bottom: 6rem;
+  }
+
+  .header {
+    height: 10vh;
+  }
+}
+@media all and (max-width: 760px) {
+  .nav {
+    width: 100%;
+  }
+  .nav-menus__menu {
+    min-width: 90%;
+  }
+}
+@media all and (max-width: 500px) {
+  .nav {
+    width: 100%;
+  }
+  .nav-menus__menu {
+    min-width: 95%;
+  }
+
+  .footer {
+    height: 5vh;
+  }
+  .footer__content--btn {
+    margin: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+@media all and (max-width: 375px) {
+  .nav {
+    width: 100%;
+  }
+  .nav-menus__menu {
+    min-width: 96%;
+    margin-bottom: 1rem;
+    height: 50vh;
+  }
+  .nav-menus__menu--btn {
+    height: 50vh;
+  }
+
+  .nav-menus__menu--menu2 .nav-menus__menu--title {
+    font-size: 1.3rem;
+  }
+
+  .nav-menus__menu--menu3 .nav-menus__menu--title {
+    font-size: 2.3rem;
+    height: 50px;
+  }
+
+  .nav-menus__menu--menu4 .nav-menus__menu--title {
+    font-size: 2rem;
+  }
+
+  .nav-menus__menu--menu3 .nav-menus__menu--p {
+    height: 50px;
+  }
+
+  .nav-menus__menu--menu4 .nav-menus__menu--p {
+    height: 50px;
+  }
+
+  .nav-menus__menu--menu4 .nav-menus__menu--title {
+    height: 50px;
+  }
+
+  .nav-menus__menu--menu2 .nav-menus__menu--p {
+    height: 50px;
+  }
+
+  .nav-menus__menu--menu2 .nav-menus__menu--title {
+    height: 50px;
+  }
+
+  .nav-menus__menu--menu1 .nav-menus__menu--p {
+    height: 50px;
+  }
+
+  .nav-menus__menu--menu1 .nav-menus__menu--title {
+    height: 50px;
+    margin: 0;
+  }
+
+  .footer {
+    height: 5vh;
+  }
+  .footer__content--btn {
+    margin: 0.5rem;
+    font-size: 1.1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
