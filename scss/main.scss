@@ -593,7 +593,29 @@ ul { list-style-type: none;}
       font-size: 1.1rem;
       }
     }
-
-  
- 
+}
+/*Responsive page1*/
+@media all and (max-width: 1040px) {
+  .zone-menus__menu__main {
+    width: 95%;
+    &__in_title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 4rem 0 1.5rem 0;
+      &--img {
+        width: 35%;
+        height: 20px;
+        margin: auto;
+      }
+      &--title {
+        text-align: center;
+        width: 30%;
+        white-space: nowrap;
+        font-family: 'Kalam';
+        font-size: 1rem;
+        font-weight: 700;
+      }  
+    }
+  }
 }
