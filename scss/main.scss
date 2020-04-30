@@ -474,12 +474,19 @@ ul { list-style-type: none;}
   margin: 5rem;
   background-color: $bg-primary;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius:5rem;
   &__mentions {
     font-size: 5rem;
     color: $color-primary;
+    &--txt {
+      text-align:center;
+      margin: 1rem;
+      color: white;
+
+    }
   }
 }
 
@@ -946,5 +953,19 @@ ul { list-style-type: none;}
     &--title {
       font-size:2rem;
     }
+  }
+}
+
+/*responsive recommandations*/
+
+@media all and (max-width: 840px)
+{
+  .zone-bloc {
+    margin:2rem;
+    height: 80vh;
+    &__mentions {
+      font-size: 1.5rem;
+    }
+    
   }
 }
